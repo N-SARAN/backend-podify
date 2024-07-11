@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 async function dbconnect() {
   await mongoose.connect(
-    "mongodb+srv://saran1:Saran123@podcast.haoollu.mongodb.net/?retryWrites=true&w=majority&appName=podcast",
+    "mongodb+srv://preethamvenkatram:<password>@cluster0.n4zxwgp.mongodb.net/",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
