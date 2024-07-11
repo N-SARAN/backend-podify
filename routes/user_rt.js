@@ -96,7 +96,7 @@ router.post("/forgotPassword", async (req, res) => {
       from: process.env.EMAIL_USERNAME,
       to: email,
       subject: "Reset Password",
-      text: `http://localhost:4000/resetPassword/${token}`,
+      text: `https://backend-podify-1.onrender.com/resetPassword/${token}`,
     };
     transporter.sendMail(mailOptions, function (error, info) {
       if (error) {

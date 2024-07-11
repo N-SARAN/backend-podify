@@ -12,7 +12,8 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin:
+      "https://podifypodcast-gqi73ttp7-sarans-projects-fc55938d.vercel.app",
     credentials: true, // or whatever your frontend URL is
   })
 );
@@ -20,7 +21,7 @@ app.use(cookieParser());
 app.use("/auth", UserRouter);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the home page!");
+  res.send("Welcome to the home page!");
 });
 
 async function dbconnect() {
