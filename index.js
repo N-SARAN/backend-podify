@@ -19,6 +19,10 @@ app.use(
 app.use(cookieParser());
 app.use("/auth", UserRouter);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the home page!");
+});
+
 async function dbconnect() {
   await mongoose.connect(
     "mongodb+srv://saran1:Saran123@podcast.haoollu.mongodb.net/?retryWrites=true&w=majority&appName=podcast",
