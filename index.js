@@ -12,8 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin:
-      "https://podifypodcast-gqi73ttp7-sarans-projects-fc55938d.vercel.app",
+    origin: "https://podifypodcast.vercel.app/",
     credentials: true, // or whatever your frontend URL is
   })
 );
